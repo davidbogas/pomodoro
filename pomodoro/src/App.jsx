@@ -24,6 +24,9 @@ function App() {
           <Timer />}
         </SettingsContext.Provider>
       </main>
+      <footer>
+        <p>Made with ❤️ by <a href="https://davidbogas.dev" target="_blank">David Bogas</a></p>
+      </footer>
     </>
   )
 }
