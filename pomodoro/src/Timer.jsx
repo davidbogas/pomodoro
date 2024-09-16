@@ -87,7 +87,7 @@ function Timer(props) {
                 <h1>Simple Pomodoro</h1>
                 <h2>{mode === 'work' ? 'Work time' : 'Break time'}</h2>
             </div>
-            <div className="timer">
+            <div className="content">
                 <CircularProgressbar
                     value={percentage}
                     text={minutes + ':' + seconds}

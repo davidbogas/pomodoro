@@ -11,7 +11,7 @@ function Settings(props) {
             <div>
                 <h1>Settings</h1>
             </div>
-            <div>
+            <div className="content">
                 <label htmlFor="work-time">Work minutes:</label>
                 <input id="work-time" type="number" min="1" max="60" value={settingsInfo.workMinutes} onChange={(e) => settingsInfo.setWorkMinutes(e.target.value)} />
                 <label htmlFor="break-time">Break minutes:</label>
