@@ -16,6 +16,8 @@ function Settings(props) {
                 <input id="work-time" type="number" min="1" max="60" value={settingsInfo.workMinutes} onChange={(e) => settingsInfo.setWorkMinutes(e.target.value)} />
                 <label htmlFor="break-time">Break minutes:</label>
                 <input id="break-time" type="number" min="1" max="60" value={settingsInfo.breakMinutes} onChange={(e) => settingsInfo.setBreakMinutes(e.target.value)} />
+            </div>
+            <div>
                 <SettingsButton onClick={settingsInfo.handleSettings} state={settingsInfo.showSettings} />
             </div>
         </div>

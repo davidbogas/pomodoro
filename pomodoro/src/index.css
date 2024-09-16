@@ -35,7 +35,7 @@ body {
 button {
   background-color: var(--background-color);
   width: 100%;
-  margin: .5rem;
+  margin: .5rem 0;
   padding: 1rem 2rem;
   border: 1px solid var(--primary-color);
   border-radius: 999px;
@@ -88,7 +88,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .content {
-  margin: 2rem;
+  margin: 3rem 0;
 }
 
 .play-button {
