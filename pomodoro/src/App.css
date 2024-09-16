@@ -10,7 +10,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-height: 100lvh;
+  min-height: 100svh;
 }
 
 button {

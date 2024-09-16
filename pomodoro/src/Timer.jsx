@@ -7,7 +7,8 @@ import SettingsContext from './SettingsContext';
 
 const primaryColor = '#f87934';
 const secondaryColor = '#784bc2';
-const trailColor = '#f8793422';
+const trailColorWork = '#f8793422';
+const trailColorBreak = '#784bc222';
 const textColor = '#ffffff';
 
 function Timer(props) {
@@ -77,7 +78,7 @@ function Timer(props) {
 
     const styles = buildStyles({
         pathColor: mode === 'work' ? primaryColor : secondaryColor,
-        trailColor: trailColor,
+        trailColor: mode === 'work' ? trailColorWork : trailColorBreak,
         textColor: textColor,
     });
 
