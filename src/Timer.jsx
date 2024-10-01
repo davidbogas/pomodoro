@@ -47,14 +47,14 @@ const Timer = () => {
                 if (prevSecondsLeft === 0) {
                     switchMode();
                     return prevSecondsLeft;
-                }
-
-                return prevSecondsLeft - 1;
+                } else {
+                    return prevSecondsLeft - 1;
+                };
             });
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [isPaused, settingsInfo]);
+    }, [isPaused, mode]);
 
     const totalSeconds = mode === 'work' ? settingsInfo.workMinutes * 60 : settingsInfo.breakMinutes * 60;
     const percentage = Math.round((secondsLeft / totalSeconds) * 100);
