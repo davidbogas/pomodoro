@@ -40,6 +40,17 @@ const Timer = () => {
     };
 
     useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.code === 'Space') {
+                handlePlayPause();
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        return () => document.removeEventListener('keydown', handleKeyDown);
+    }, []);
+
+    useEffect(() => {
         const interval = setInterval(() => {
             setSecondsLeft((prevSecondsLeft) => {
                 if (isPaused) return prevSecondsLeft;
