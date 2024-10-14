@@ -16,6 +16,9 @@ function App() {
 
   return (
     <>
+      <header>
+          <span id="gradient-bar"></span>
+      </header>
       <main>
         <SettingsContext.Provider value={{ workMinutes, breakMinutes, setWorkMinutes, setBreakMinutes, showSettings, handleSettings }}>
           {showSettings ?
